@@ -22,5 +22,31 @@ It provides the following basic operations for tensor calculus (all written in d
 - Rank 2 Identity tensor of input type `Eye = identity2(Eye)` with `C = Eye*C`
 - Rank 4 Identity tensor (symmetric variant) of input type `I4 = identity4(Eye)` with `C = I4(Eye)**C` or `inv(C) = identitiy4(inv(C))**C`
 
+## Basic Usage
+The most basic example on how to use this module is to [download the module](https://github.com/adtzlr/ttb/archive/master.zip), put the 'ttb'-Folder in your working directory and add two lines of code:
+
+```fortran
+       include 'ttb/ttb_library.f'
+
+       program script101_ttb
+       use Tensor
+       implicit none
+
+       ! user code
+
+       end program script101_ttb
+```
+The `include 'ttb/ttb_library.f'` statement replaces the line with the content of the ttb-module. The first line in a program or subroutine is now a `use Tensor` statement. That's it - now you're ready to go.
+
+## Neo-Hookean Material
+With the help of the Tensor module the Second Piola-Kirchhoff stress tensor `S` of a nearly-incompressible Neo-Hookean material model is basically a one-liner:
+
+\\[ \bm{S} = dev(J^{-2/3}\bm{1}\bm{C}) inv(\bm{C} \\]
+
+```fortran
+       S = dev(det(F)**(-2./3.)*Eye*C)*inv(C)+p*det(F)*inv(C)
+```
+
+
 ## Sources
 Naumann, C.: [Chemisch-mechanisch gekoppelte Modellierung und Simulation oxidativer Alterungsvorgänge in Gummibauteilen (German)](http://nbn-resolving.de/urn:nbn:de:bsz:ch1-qucosa-222075). PhD thesis. Fakultät für Maschinenbau der Technischen Universität Chemnitz, 2016.
