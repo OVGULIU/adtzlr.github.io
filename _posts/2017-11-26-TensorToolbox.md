@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Release of Tensor Toolbox for Modern Fortran
+title: Initial Release of Tensor Toolbox for Modern Fortran
 ---
 
 Tensor Toolbox for Modern Fortran (ttb) is a Fortran module to add Tensor features to Fortran. It provides derived data types from general arrays for rank 2 and rank 4 tensors (and it's symmetric variants). Computation of the deviatoric part, fourth-order identity tensor, dot product, double-dot product, etc. is available without constructing any loops by the user. For further information read the full post or have a look at the [ttb-repository](https://github.com/adtzlr/ttb).
