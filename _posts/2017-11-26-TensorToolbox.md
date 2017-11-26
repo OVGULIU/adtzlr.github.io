@@ -3,7 +3,9 @@ layout: post
 title: Release of Tensor Toolbox for Modern Fortran
 ---
 
-Tensor Toolbox for Modern Fortran (ttb) is a Fortran module to add Tensor features to Fortran. It provides derived data types from general arrays for rank 2 and rank 4 tensors (and it's symmetric variants). Computation of the deviatoric part, fourth-order identity tensor, dot product, double-dot product, etc. is available without constructing any loops by the user. For further information look at the ttb-repository.
+Tensor Toolbox for Modern Fortran (ttb) is a Fortran module to add Tensor features to Fortran. It provides derived data types from general arrays for rank 2 and rank 4 tensors (and it's symmetric variants). Computation of the deviatoric part, fourth-order identity tensor, dot product, double-dot product, etc. is available without constructing any loops by the user. For further information read the full post or have a look at the [ttb-repository](https://github.com/adtzlr/ttb).
+
+## A short overview
 
 Commercial FEM software packages often offer interfaces (user subroutines written in Fortran) for custom defined user materials like UMAT in Abaqus or HYPELA2 in MSC.Marc. Unlike other scientific programming languages like MATLAB or Python Fortran is not as comfortable to use when dealing with high level programming features of tensor manipulation. On the other hand it's super fast - so why not combine the handy features from MATLAB or Python's NumPy/Scipy with the speed of Fortran? That's the reason why I started working on a simple but effective module called **Tensor Toolbox for Modern Fortran**. I adopted the idea to my needs from [Naumann, C. (2016)](http://nbn-resolving.de/urn:nbn:de:bsz:ch1-qucosa-222075).
 
