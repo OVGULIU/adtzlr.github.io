@@ -26,15 +26,14 @@ It provides the following basic operations for tensor calculus (all written in d
 The most basic example on how to use this module is to [download the module](https://github.com/adtzlr/ttb/archive/master.zip), put the 'ttb'-Folder in your working directory and add two lines of code:
 
 ```fortran
-       include 'ttb/ttb_library.f'
+include 'ttb/ttb_library.f'
 
-       program script101_ttb
-       use Tensor
-       implicit none
+program script101_ttb
+use Tensor
+implicit none
+! user code
 
-       ! user code
-
-       end program script101_ttb
+end program script101_ttb
 ```
 The `include 'ttb/ttb_library.f'` statement replaces the line with the content of the ttb-module. The first line in a program or subroutine is now a `use Tensor` statement. That's it - now you're ready to go.
 
@@ -42,7 +41,7 @@ The `include 'ttb/ttb_library.f'` statement replaces the line with the content o
 With the help of the Tensor module the Second Piola-Kirchhoff stress tensor `S` of a nearly-incompressible Neo-Hookean material model is basically a one-liner:
 
 ```fortran
-       S = dev(det(F)**(-2./3.)*Eye*C)*inv(C)+p*det(F)*inv(C)
+S = dev(det(F)**(-2./3.)*Eye*C)*inv(C)+p*det(F)*inv(C)
 ```
 
 
