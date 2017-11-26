@@ -3,7 +3,7 @@ layout: post
 title: Initial Release of Tensor Toolbox for Fortran
 ---
 
-Tensor Toolbox for Modern Fortran (ttb) is a Fortran module to add Tensor features to Fortran. It provides derived data types from general arrays for rank 2 and rank 4 tensors (and it's symmetric variants). Computation of the deviatoric part, fourth-order identity tensor, dot product, double-dot product, etc. is available without constructing any loops by the user. For further information read the full post or have a look at the [ttb-repository](https://github.com/adtzlr/ttb).
+[Tensor Toolbox for Modern Fortran (ttb)](https://github.com/adtzlr/ttb) is a Fortran module to add Tensor features to Fortran. It provides derived data types from general arrays for rank 2 and rank 4 tensors (and it's symmetric variants). Computation of the deviatoric part, fourth-order identity tensor, dot product, double-dot product, etc. is available without constructing any loops by the user. For further information read the full post or have a look at the [ttb-repository](https://github.com/adtzlr/ttb).
 
 ## A short overview
 
@@ -21,3 +21,6 @@ It provides the following basic operations for tensor calculus (all written in d
 - Assigment of a real-valued Array to a Tensor with matching dimensions `A = B` where B is a Array and A a Tensor
 - Rank 2 Identity tensor of input type `Eye = identity2(Eye)` with `C = Eye*C`
 - Rank 4 Identity tensor (symetric variant) of input type `I4 = identity4(Eye)` with `C = I4(Eye)**C` or `inv(C) = identitiy4(inv(C))**C`
+
+## Sources
+Naumann, C.: [Chemisch-mechanisch gekoppelte Modellierung und Simulation oxidativer Alterungsvorgänge in Gummibauteilen (German)](http://nbn-resolving.de/urn:nbn:de:bsz:ch1-qucosa-222075). PhD thesis. Fakultät für Maschinenbau der Technischen Universität Chemnitz, 2016.
