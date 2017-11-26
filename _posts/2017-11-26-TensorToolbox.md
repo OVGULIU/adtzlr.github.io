@@ -41,6 +41,8 @@ The `include 'ttb/ttb_library.f'` statement replaces the line with the content o
 ## Neo-Hookean Material
 With the help of the Tensor module the Second Piola-Kirchhoff stress tensor `S` of a nearly-incompressible Neo-Hookean material model is basically a one-liner:
 
+\\[ \bm{S} = dev(J^{-2/3}\bm{1}\bm{C}) inv(\bm{C} \\]
+
 ```fortran
        S = dev(det(F)**(-2./3.)*Eye*C)*inv(C)+p*det(F)*inv(C)
 ```
