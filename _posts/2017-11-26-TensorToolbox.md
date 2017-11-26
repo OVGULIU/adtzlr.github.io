@@ -20,7 +20,7 @@ It provides the following basic operations for tensor calculus (all written in d
 - Assigment of a real-valued Scalar to all components of a Tensor `A = 0.0` or `A = 0.d0`
 - Assigment of a real-valued Array to a Tensor with matching dimensions `A = B` where B is a Array and A a Tensor
 - Rank 2 Identity tensor of input type `Eye = identity2(Eye)` with `C = Eye*C`
-- Rank 4 Identity tensor (symetric variant) of input type `I4 = identity4(Eye)` with `C = I4(Eye)**C` or `inv(C) = identitiy4(inv(C))**C`
+- Rank 4 Identity tensor (symmetric variant) of input type `I4 = identity4(Eye)` with `C = I4(Eye)**C` or `inv(C) = identitiy4(inv(C))**C`
 
 ## Sources
 Naumann, C.: [Chemisch-mechanisch gekoppelte Modellierung und Simulation oxidativer Alterungsvorgänge in Gummibauteilen (German)](http://nbn-resolving.de/urn:nbn:de:bsz:ch1-qucosa-222075). PhD thesis. Fakultät für Maschinenbau der Technischen Universität Chemnitz, 2016.
