@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GDPR ( DSGVO)
+title: GDPR
 permalink: /gdpr/
 ---
 
